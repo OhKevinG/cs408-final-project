@@ -6,6 +6,4 @@ Everybody wants to be a critic, as humans we can't seem to help it. I particular
 
 ## Project Wireframe
 
-TODO: Replace the wireframe below with you own design.
-
 ![wireframe](wireframe-movie-ratings.png)
