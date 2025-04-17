@@ -6,4 +6,4 @@ Everybody wants to be a critic, as humans we can't seem to help it. I particular
 
 ## Project Wireframe
 
-![wireframe](wireframe-movie-ratings.png)
+![wireframe](wireframe-movie-ratings.PNG)
