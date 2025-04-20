@@ -1,4 +1,65 @@
+body {
+  font-family: "Courier New", monospace;
+}
+
 h1{
   border-color: #d3e644;
   border-style: dashed;
+  text-align: center;
 }
+
+form {
+  justify-self: center;
+  display: flex;
+  flex-direction: row;
+  border: solid;
+  padding: 20px;
+  gap: 20px;
+  align-items: flex;
+  justify-content: center;
+}
+
+#field-column {
+  justify-items: end;
+}
+
+#button-container {
+  align-self: center;
+}
+
+#button-container > button {
+  width: 150px;
+  height: 150px;
+}
+
+#data {
+  margin: 20px;
+  justify-items: center;
+}
+
+#data > * {
+  margin: 5px;
+}
+
+#data > button {
+  width: 100px;
+  height: 50px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  width: 900px;
+}
+
+th,
+td {
+  border: 1px solid;
+  padding: 8px 10px;
+  min-width: 100px;
+}
+
+
+
