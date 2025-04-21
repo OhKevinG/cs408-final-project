@@ -1,10 +1,20 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Courier New", monospace;
+  background-image: url('/film.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #824b4a;
+  
 }
 
 h1{
-  border-color: #d3e644;
-  border-style: dashed;
   text-align: center;
 }
 
@@ -17,6 +27,7 @@ form {
   gap: 20px;
   align-items: flex;
   justify-content: center;
+  background-color: white;
 }
 
 #field-column {
@@ -52,6 +63,7 @@ table {
   font-size: 1.2em;
   letter-spacing: 1px;
   width: 900px;
+  background-color: white;
 }
 
 th,
