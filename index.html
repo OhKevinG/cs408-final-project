@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>CS408-Final-Project</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,24 +42,19 @@
       </div>
       
       <div id="button-container">
-        <button id="send-data">SUBMIT</button>
+        <button type="button" id="send-data">SUBMIT</button>
       </div>
     </form>
+    
 
     <div id="data">
-      <button>LOAD</button>
+      <button id="load-data">LOAD</button>
       <select name="sort" id="sort">
         <option value="">--Sort by--</option>
       </select>
 
-      <table>
-        <tr>
-          <th>TITLE</th>
-          <th>DIRECTOR</th>
-          <th>YEAR</th>
-          <th>RATING</th>
-          <th>REVIEW</th>
-        </tr>
+      <table id="lambda-info">
+       <!-- loaded with AJAX -->
       </table>
     </div>
   <script type="module" src="js/main.js"></script>
