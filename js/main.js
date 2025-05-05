@@ -68,8 +68,21 @@ document.getElementById("load-data").onclick = function () {
                     <td>${item.year}</td>
                     <td>${item.rating}</td>
                     <td>${item.review}</td>
+                    <td><button class="delete-data" data-id="${item.id}">Delete</button></td>
                 </tr>`).join('')}
-            </tbody>`;    
+            </tbody>`;
+
+            const deleteButtons = document.querySelectorAll(".delete-data");
+            deleteButtons.forEach(button => {
+                button.addEventListener("click",  function () {
+                    const idToDelete = this.getAttribute("data-id");
+                    let xhr = new XMLHttpRequest();
+                    xhr.open("DELETE", `https://ii03ewr3r6.execute-api.us-east-2.amazonaws.com/items/${idToDelete}`);
+                    xhr.setRequestHeader("Content-Type", "application/json");
+                    xhr.send();
+                    document.getElementById("lambda-info").innerHTML = "";
+                });
+            });
     });
     xhr.open("GET", "https://ii03ewr3r6.execute-api.us-east-2.amazonaws.com/items")
     xhr.send();
