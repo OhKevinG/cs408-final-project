@@ -7,3 +7,15 @@ Everybody wants to be a critic, as humans we can't seem to help it. I particular
 ## Project Wireframe
 
 ![wireframe](wireframe-movie-ratings.PNG)
+
+## Running
+
+Use VSCode's Live Preview and copy and paste url into browser for best experience.
+Enter the movie's title, director, year the movie was released, rating from 1-5, and review of the movie.
+Select the "SUBMIT" button to load entry into AWS database.
+To view previous entries in a table format, select "LOAD" button.
+Sorting still needs to be implemented. 
+
+## Reflection
+
+I wish I had spent more time on the project as I could've come up with and implemented a few more cool ideas. I will spend some time working on it this summer and implement some more features so that I can continue to learn and be happier with this project. I had fun implementing my own version of a simple aws database webpage and learning how to work with aws. The biggest thing I struggled with was how to get the table to allow for new attributes to be sent to the server. I had to adjust some code in the lambda function in AWS, but once I did that it was working perfectly. I definitely would love to implement the sorting feature so that a user can sort by different attributes and also change the rating system to actual stars.
